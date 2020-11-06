@@ -1,0 +1,226 @@
+@import "~bootstrap/scss/bootstrap";
+
+.card-signin {
+    width: 300px;
+}
+
+.autocomplete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    left: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    ul{
+        padding: 0;
+        margin-bottom: 0;
+        cursor: pointer;
+        li{
+            margin-bottom: 10px;
+
+
+            p{
+                margin: 0;
+                padding: 20px;
+            }
+            :hover{
+                background-color:#c2b6b6;
+            }
+        }
+
+    }
+
+    span{
+        cursor: pointer;
+        background-color: red;
+        margin-bottom: 0;
+        color: white;
+        text-align: center;
+    }
+}
+
+.serial-search-input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    transition: 0.5s;
+}
+
+table{
+    border-spacing: 0;
+    overflow: hidden;
+
+    *{
+        border: 0.1px solid rgba(90, 82, 67, 0.452);
+
+    }
+
+}
+
+tr{
+    height: 50px;
+}
+
+tr:last-child{
+
+    td:first-child{
+        border-bottom-left-radius: 20px;
+    }
+
+    td:last-child{
+        border-bottom-right-radius: 20px;
+    }
+}
+
+td {
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+th {
+    padding: 10px;
+    background-color: rgb(85 92 99 / 45%);
+
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.gadjets-output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(255, 81, 81, 0.233);
+    color: rgb(53, 0, 0);
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/*Error section END*/
+
+/*Error section START*/
+
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(91, 255, 91, 0.233);
+    color: rgb(0, 53, 3);
+    margin-bottom: 30px;
+}
+
+/*Error section END*/
+
+
+//Content END
+
+
+// fade
+.fade-enter-active, .fade-leave-active {
+    transition: all 0.19s;
+
+  }
+
+.fade-enter, .fade-leave-to  {
+  opacity: 0;
+  transform: scale(0);
+}
+
+// list
+.list-enter-active .list-leave-active {
+    transition: all  0.15s ;
+}
+
+.list-enter  {
+    transform: translateX(-400px);
+    opacity: 0;
+
+}
+
+.list-leave-to{
+    opacity: 0;
+
+}
+
+// product
+
+.product-enter-active, .product-leave-active {
+    transition: all 0.19s;
+
+  }
+
+.product-enter, .product-leave-to  {
+  opacity: 0;
+  transform: scale(0);
+}
+
+//autocomplete-list
+
+.autocomplete-enter-active .autocomplete-leave-active {
+    transition: all  0.2s ;
+}
+
+.autocomplete-enter  {
+    transform: translateY(-10px);
+    opacity: 0;
+
+}
+
+.autocomplete-leave-to{
+    transform: translateY(10px);
+    opacity: 0;
+    position: absolute;
+
+}
+//autocomplete-block
+
+.autocomplete-block-enter-active .autocomplete-leave-active {
+    transition: all  0.2s ;
+}
+
+.autocomplete-block-enter, .autocomplete-block-leave-to {
+    transform: translateY(-100px);
+    opacity: 0;
+    position: absolute;
+
+}
